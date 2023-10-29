@@ -1,0 +1,1912 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  justify-content: center;
+  background-color: rgb(229, 241, 250);
+}
+
+.reveal {
+  position: absolute;
+  transform: translateY(0px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+/*portfilio letter*/
+#l2 {
+  margin-left: 15px;
+}
+#l3 {
+  margin-left: 30px;
+}
+#l4 {
+  margin-left: 45px;
+}
+#l5 {
+  margin-left: 60px;
+}
+#l6 {
+  margin-left: 75px;
+}
+#l7 {
+  margin-left: 90px;
+}
+#l8 {
+  margin-left: 105px;
+}
+#l9 {
+  margin-left: 115px;
+}
+
+.waviy {
+  position: absolute;
+  margin-top: 65px;
+  align-items: center;
+  margin-left: 48px;
+}
+.waviy span {
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(63, 203, 207);
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
+#profile-logo {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -10px;
+  width: 80px;
+  height: 80px;
+}
+
+#nav-menu-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  margin-top: -30px;
+  margin-left: -20px;
+  background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+}
+
+#nav-menu {
+  position: absolute;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 240px;
+}
+a {
+  text-decoration: none;
+}
+
+.nav-menu {
+  font-size: 30px;
+  color: rgb(63, 203, 207);
+  font-family: fantasy;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.nav-menu:hover {
+  color: rgb(112, 248, 169);
+  text-decoration: underline;
+}
+#greetings-wrapper {
+  position: absolute;
+  margin-top: 83px;
+  width: 10000px;
+  height: 50px;
+  margin-left: -20px;
+}
+
+/*hello*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.hello-there {
+  position: absolute;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: -10px;
+  margin-left: 500px;
+  width: 500px;
+  height: 100px;
+  font-size: 30px;
+}
+
+.hello-there h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.hello-there h2:nth-child(2) {
+  color: #03a9f4;
+  margin-top: -60px;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+#ABOUT {
+  position: absolute;
+  text-shadow: 0px 7px 10px rgb(77, 74, 74);
+  margin-top: 100px;
+  margin-left: 570px;
+  padding-top: 100px;
+  transition-delay: 50ms;
+}
+
+/* typewriter effect*/
+
+.type {
+  color: #0000;
+
+  background: linear-gradient(-90deg, rgb(77, 74, 74) 5px, #0000 0) 10px 0,
+    linear-gradient(rgb(77, 74, 74) 0 0) 0 0;
+  background-size: calc(var(--n) * 10ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.3s infinite steps(1),
+    t calc(var(--n) * 0.09s) steps(var(--n)) forwards;
+}
+
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+.type {
+  text-shadow: 0px 7px 10px rgb(77, 74, 74);
+}
+
+#introduction {
+  position: absolute;
+  font-size: 25px;
+  content: justify;
+  margin-top: 270px;
+  margin-left: -50px;
+}
+
+#profile-picture {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-top: 250px;
+  margin-left: 900px;
+}
+#profile-picture {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+/*side left effect of profile picture*/
+@keyframes slidein {
+  from {
+    margin-top: -300px;
+  }
+
+  to {
+    margin-top: 250px;
+  }
+}
+#SKILLS {
+  position: absolute;
+  text-shadow: 0px 7px 10px rgb(77, 74, 74);
+  padding-top: 100px;
+  margin-top: 650px;
+  margin-left: 570px;
+}
+
+/*gallery*/
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.image-content {
+  align-content: center;
+}
+
+.container {
+  position: absolute;
+  font-size: 20px;
+  margin-top: 800px;
+  margin-left: 150px;
+  width: 1000px;
+  padding: 50px;
+  text-align: center;
+  background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+  border: solid rgb(28, 7, 121);
+}
+
+.filter-menu {
+  margin-left: -50px;
+  margin-bottom: 20px;
+  width: 1000px;
+}
+.filter-menu li {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background:blue;
+  color: #fff;
+  cursor: pointer;
+}
+.filter-menu li:hover,
+.filter-menu li.current {
+  background: lightskyblue;
+}
+
+.filter-item li {
+  width: 20%;
+  padding: 2px;
+  float: left;
+}
+
+.filter-item li.active {
+  width: 20%;
+  padding: 2px;
+  transition: all 0.5s ease;
+}
+
+.filter-item li.delete {
+  width: 0%;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+
+.filter-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#PROJECTS {
+  position: absolute;
+  text-shadow: 0px 7px 10px rgb(77, 74, 74);
+  padding-top: 100px;
+  margin-top: 2320px;
+  margin-left: 550px;
+}
+
+/*slideshow gallery1*/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+#phil-am-life {
+  position: absolute;
+  width: 200%;
+  text-shadow: 0px 7px 10px rgb(77, 74, 74);
+  font-size: 20px;
+  margin-top: 2450px;
+  margin-left: 380px;
+}
+
+.container-slideshow-gallery1 {
+  position: absolute;
+  margin-top: 2500px;
+  margin-left: 100px;
+  width: 1100px;
+  background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+  border: solid rgb(28, 7, 121);
+}
+
+/* Hide the images by default */
+.mySlides1 {
+  margin-left: 200px;
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor1 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev1,
+.next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover,
+.next1:hover {
+  background-color: rgb(28, 7, 121);
+}
+
+/* Number text (1/3 etc) */
+.numbertext1 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container1 {
+  text-align: center;
+  background-color: rgb(63, 203, 207);
+  padding: 2px 16px;
+  color: rgb(28, 7, 121) white;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column1 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo1 {
+  opacity: 0.6;
+}
+
+.active1,
+.demo1:hover {
+  opacity: 1;
+}
+
+/*slideshow gallery2*/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+#deaf-and-mute {
+  position: absolute;
+  width: 200%;
+  text-shadow: 0px 7px 10px rgb(77, 74, 74);
+  font-size: 20px;
+  margin-top: 3500px;
+  margin-left: 370px;
+}
+
+.container-slideshow-gallery2 {
+  position: absolute;
+  margin-top: 3550px;
+  margin-left: 100px;
+  width: 1100px;
+  background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+  border: solid rgb(28, 7, 121);
+}
+
+/* Hide the images by default */
+
+.mySlides2 {
+  margin-left: 200px;
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor2 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext2 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+
+.caption-container2 {
+  text-align: center;
+  background-color: rgb(63, 203, 207);
+  padding: 2px 16px;
+  color: rgb(28, 7, 121) white;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+
+.column2 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+
+.demo2 {
+  opacity: 0.6;
+}
+
+.active2,
+.demo2:hover {
+  opacity: 1;
+}
+
+#CONTACT {
+  position: absolute;
+  text-shadow: 0px 7px 10px rgb(77, 74, 74);
+  padding-top: 100px;
+  margin-top: 4700px;
+  margin-left: 570px;
+}
+
+#info {
+  position: absolute;
+  margin-top: 4850px;
+  margin-left: 700;
+  width: 600px;
+  height: 100px;
+}
+
+.info-image {
+  font-size: 20px;
+  text-align: left;
+  font-family: cursive;
+}
+
+#landing {
+  position: absolute;
+  margin-top: 4850px;
+  margin-left: 650px;
+  width: 600px;
+  height: 100px;
+}
+
+.landing {
+  text-align: left;
+  padding-left: -600px;
+}
+
+#enter-name {
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+}
+
+#enter-email {
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+}
+
+#message-me {
+  width: 500px;
+  height: 200px;
+  font-size: 30px;
+  padding-top: 160px;
+}
+
+#submit-me {
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+}
+
+#google-map {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 5400px;
+  border: solid 2px;
+  width: 1050px;
+  height: 400px;
+}
+#footer-wrapper {
+  position: absolute;
+  margin-top: 5850px;
+  width: 5000px;
+  height: 100px;
+}
+
+#copyright {
+  position: absolute;
+  font-size: 15px;
+  margin-top: 60px;
+}
+#follow {
+  position: absolute;
+  font-size: 20px;
+  margin-left: 700px;
+  margin-top: 50px;
+}
+
+#media-icon {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  margin-left: 830px;
+  margin-top: 30px;
+  
+}
+
+#media-icon > div {
+  margin: 0px;
+  text-align: left;
+
+}
+
+.media-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.media-icon-size {
+  width: 100%;
+}
+
+
+
+@media (max-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: rgb(229, 241, 250);
+    justify-content: center;
+  }
+
+  .reveal {
+    position: absolute;
+    transform: translateY(0px);
+    opacity: 0;
+    transition: 3s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  #wrapper {
+    width: 100%;
+    height: 110%;
+  }
+  /*portfilio letter*/
+  #l2 {
+    margin-left: 15px;
+  }
+  #l3 {
+    margin-left: 30px;
+  }
+  #l4 {
+    margin-left: 45px;
+  }
+  #l5 {
+    margin-left: 60px;
+  }
+  #l6 {
+    margin-left: 75px;
+  }
+  #l7 {
+    margin-left: 90px;
+  }
+  #l8 {
+    margin-left: 105px;
+  }
+  #l9 {
+    margin-left: 115px;
+  }
+
+  .waviy {
+    position: absolute;
+    margin-top: 70px;
+    align-items: center;
+    margin-left: 40px;
+  }
+  .waviy span {
+    position: absolute;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(63, 203, 207);
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.2s * var(--i));
+  }
+
+  @keyframes flip {
+    0%,
+    80% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  #profile-logo {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -7px;
+    max-width: 0.6%;
+  }
+
+  #nav-menu-wrapper {
+    position: fixed;
+    width: 10000px;
+    height: 100px;
+    margin-top: -30px;
+    margin-left: -20px;
+    background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+  }
+
+  #nav-menu {
+    position: absolute;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 100px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .nav-menu {
+    font-size: 25px;
+    color: rgb(63, 203, 207);
+    font-family: fantasy;
+    text-align: right;
+    margin-left: 20px;
+  }
+
+  .nav-menu:hover {
+    color: rgb(112, 248, 169);
+    text-decoration: underline;
+  }
+  #greetings-wrapper {
+    position: absolute;
+    margin-top: -225px;
+    width: 10000px;
+    height: 50px;
+    margin-left: -140px;
+  }
+
+  /*hello*/
+  @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+  .hello-there {
+    position: absolute;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 300px;
+    margin-left: 550px;
+    width: 500px;
+    height: 100px;
+    font-size: 15px;
+  }
+
+  .hello-there h2:nth-child(1) {
+    color: transparent;
+    width: 50%;
+    -webkit-text-stroke: 2px rgb(59, 51, 97);
+  }
+
+  .hello-there h2:nth-child(2) {
+    color: rgb(63, 203, 207);
+    margin-top: -35px;
+    animation: animate 4s ease-in-out infinite;
+  }
+
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+
+  #ABOUT {
+    position: absolute;
+    font-size: 30px;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    margin-top: 10px;
+    margin-left: 430px;
+    padding-top: 150px;
+    transition-delay: 50ms;
+  }
+
+  #introduction {
+    position: absolute;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    font-size: 20px;
+    content: justify;
+    margin-top: 250px;
+  }
+
+  #profile-picture {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 650px;
+  }
+
+  #SKILLS {
+    position: absolute;
+    font-size: 30px;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    padding-top: 100px;
+    margin-top: 500px;
+    margin-left: 430px;
+  }
+
+  /*gallery*/
+  * {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .image-content {
+    align-content: center;
+  }
+
+  .container {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 700px;
+    margin-left: 20px;
+    width: 950px;
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+    border: solid rgb(28, 7, 121);
+  }
+
+  .filter-menu {
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-bottom: 20px;
+    width: 900px;
+    font-size: 20px;
+  }
+  .filter-menu li {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+  }
+  .filter-menu li:hover,
+  .filter-menu li.current {
+    background: lightskyblue;
+  }
+
+  .filter-item li {
+    width: 20%;
+    padding: 2px;
+    float: left;
+  }
+
+  .filter-item li.active {
+    width: 20%;
+    padding: 2px;
+    transition: all 0.5s ease;
+  }
+
+  .filter-item li.delete {
+    width: 0%;
+    padding: 0;
+    transition: all 0.5s ease;
+  }
+
+  .filter-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  #PROJECTS {
+    position: absolute;
+    font-size: 30px;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    padding-top: 100px;
+    margin-top: 2070px;
+    margin-left: 430px;
+  }
+
+  /*slideshow gallery1*/
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+
+  #phil-am-life {
+    position: absolute;
+    width: 200%;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    font-size: 20px;
+    margin-top: 2200px;
+    margin-left: 250px;
+  }
+  .container-slideshow-gallery1 {
+    position: absolute;
+    margin-top: 2280px;
+    margin-left: 20px;
+    width: 950px;
+    background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+    border: solid rgb(28, 7, 121);
+  }
+
+  /* Hide the images by default */
+  .mySlides1 {
+    margin-left: 200px;
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor1 {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev1,
+  .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev1:hover,
+  .next1:hover {
+    background-color: rgb(28, 7, 121);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext1 {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+  .caption-container1 {
+    text-align: center;
+    background-color: rgb(63, 203, 207);
+    padding: 2px 16px;
+    color: rgb(28, 7, 121) white;
+  }
+
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .column1 {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo1 {
+    opacity: 0.6;
+  }
+
+  .active1,
+  .demo1:hover {
+    opacity: 1;
+  }
+
+  /*slideshow gallery2*/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+
+  #deaf-and-mute {
+    position: absolute;
+    width: 200%;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    font-size: 20px;
+    margin-top: 3200px;
+    margin-left: 230px;
+  }
+
+  .container-slideshow-gallery2 {
+    position: absolute;
+    margin-top: 3300px;
+    margin-left: 20px;
+    width: 950px;
+    background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+    border: solid rgb(28, 7, 121);
+  }
+
+  /* Hide the images by default */
+
+  .mySlides2 {
+    margin-left: 200px;
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+
+  .cursor2 {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+
+  .prev2,
+  .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+
+  .next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+
+  .prev2:hover,
+  .next2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+
+  .numbertext2 {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+
+  .caption-container2 {
+    text-align: center;
+    background-color: rgb(63, 203, 207);
+    padding: 2px 16px;
+    color: rgb(28, 7, 121) white;
+  }
+
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+
+  .column2 {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+
+  .demo2 {
+    opacity: 0.6;
+  }
+
+  .active2,
+  .demo2:hover {
+    opacity: 1;
+  }
+
+  #CONTACT {
+    position: absolute;
+    font-size: 30;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    padding-top: 100px;
+    margin-top: 4300px;
+    margin-left: 430px;
+  }
+
+  #info {
+    position: absolute;
+    margin-top: 4600px;
+    margin-left: 0px;
+    width: 500px;
+    height: 200px;
+  }
+
+  .info-image {
+    font-size: 20px;
+    text-align: left;
+    font-family: cursive;
+  }
+
+  #landing {
+    position: absolute;
+    margin-top: 4500px;
+    margin-left: 500px;
+    height: 300px;
+  }
+
+  .landing {
+    text-align: left;
+  }
+  #enter-name {
+    width: 450px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  #enter-email {
+    width: 450px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  #message-me {
+    font-size: 15px;
+    width: 450px;
+    height: 200px;
+    padding-top: 160px;
+  }
+
+  #submit-me {
+    width: 450px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  #google-map {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5000px;
+    border: solid 2px;
+    width: 950px;
+    height: 400px;
+  }
+  #footer-wrapper {
+    position: absolute;
+    margin-top: 5500px;
+    margin-left: 0px;
+    width: 1000px;
+    height: 100px;
+  }
+
+  #copyright {
+    position: absolute;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  #follow {
+    position: absolute;
+    font-size: 15px;
+    margin-left: 560px;
+    margin-top: 25px;
+  }
+
+  #media-icon {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 650px;
+  }
+
+  .media-icon {
+    width: 10%;
+  }
+
+  
+}
+
+@media (max-width: 500px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: rgb(229, 241, 250);
+    justify-content: center;
+  }
+
+  .reveal {
+    position: absolute;
+    transform: translateY(0px);
+    opacity: 0;
+    transition: 3s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  #wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  /*portfilio letter*/
+  #l2 {
+    margin-left: 5px;
+  }
+  #l3 {
+    margin-left: 10px;
+  }
+  #l4 {
+    margin-left: 15px;
+  }
+  #l5 {
+    margin-left: 20px;
+  }
+  #l6 {
+    margin-left: 25px;
+  }
+  #l7 {
+    margin-left: 30px;
+  }
+  #l8 {
+    margin-left: 35px;
+  }
+  #l9 {
+    margin-left: 37px;
+  }
+
+  .waviy {
+    position: absolute;
+    margin-top: 25px;
+    align-items: center;
+    margin-left: 20px;
+   
+  }
+  .waviy span {
+    position: absolute;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: rgb(63, 203, 207);
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.2s * var(--i));
+  }
+
+  @keyframes flip {
+    0%,
+    80% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  #profile-logo {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -5px;
+    max-width: 0.4%;
+  }
+
+  #nav-menu-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin-top: -30px;
+    margin-left: -20px;
+    background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+  }
+
+  #nav-menu {
+    position: absolute;
+    position: fixed;
+    display:none;
+    border-collapse: collapse;
+    text-align: left;
+    width: 50%;
+    margin-top: 5px;
+    margin-left: -20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav-menu-td {
+    column-width: 100px;
+    text-align: center;
+  }
+  .nav-menu {
+    font-size: 10px;
+    color: rgb(63, 203, 207);
+    font-family: fantasy;
+  }
+
+  .nav-menu:hover {
+    color: rgb(112, 248, 169);
+    text-decoration: underline;
+  }
+  #greetings-wrapper {
+    position: absolute;
+    margin-top: 83px;
+    width: 100%;
+    height: 50px;
+    margin-left: -420px;
+  }
+
+  /*hello*/
+  @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+  .hello-there {
+    position: absolute;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: -70px;
+    margin-left: 550px;
+    width: 500px;
+    height: 100px;
+    font-size: 20px;
+  }
+
+  .hello-there h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(28, 7, 121);
+    
+  }
+
+  .hello-there h2:nth-child(2) {
+    color: rgb(63, 203, 207);
+    margin-top: -45px;
+    animation: animate 4s ease-in-out infinite;
+  }
+
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+
+  #ABOUT {
+    position: absolute;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    margin-top: 10px;
+    margin-left: 180px;
+    padding-top: 100px;
+    transition-delay: 50ms;
+  }
+
+  #introduction {
+    position: absolute;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    font-size: 15px;
+    content: justify;
+    margin-left: 40px;
+    margin-top: 350px;
+  }
+
+  /*side left effect of profile picture*/
+  @keyframes slidein {
+    from {
+      margin-left: -300px;
+    }
+
+    to {
+      margin-left: 135px;
+    }
+  }
+  #profile-picture {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: 135px;
+  }
+
+  #SKILLS {
+    position: absolute;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    padding-top: 100px;
+    margin-top: 500px;
+    margin-left: 185px;
+  }
+
+  /*gallery*/
+  * {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .image-content {
+    align-content: center;
+  }
+
+  .container {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 700px;
+    margin-left: 20px;
+    width: 420px;
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+    border: solid rgb(28, 7, 121);
+  }
+
+  .filter-menu {
+    margin-top: -40px;
+    margin-left: -40px;
+    margin-bottom: 20px;
+    width: 400px;
+    font-size: 15px;
+  }
+  .filter-menu li {
+    display: inline-block;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .filter-menu li:hover,
+  .filter-menu li.current {
+    background:lightskyblue;
+  }
+
+  .filter-item li {
+    width: 20%;
+    padding: 2px;
+    float: left;
+  }
+
+  .filter-item li.active {
+    width: 20%;
+    padding: 2px;
+    transition: all 0.5s ease;
+  }
+
+  .filter-item li.delete {
+    width: 0%;
+    padding: 0;
+    transition: all 0.5s ease;
+  }
+
+  .filter-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  #PROJECTS {
+    position: absolute;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    padding-top: 100px;
+    margin-top: 1320px;
+    margin-left: 160px;
+  }
+
+  /*slideshow gallery1*/
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+
+  #phil-am-life {
+    position: absolute;
+    width: 90%;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    font-size: 15px;
+    margin-top: 1450px;
+    margin-left: 0px;
+  }
+  .container-slideshow-gallery1 {
+    position: absolute;
+    margin-top: 1500px;
+    width: 450px;
+    margin-left: 10px;
+    background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+    border: solid rgb(28, 7, 121);
+  }
+
+  /* Hide the images by default */
+  .mySlides1 {
+    margin-left: 100px;
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor1 {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev1,
+  .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev1:hover,
+  .next1:hover {
+    background-color: rgb(28, 7, 121);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext1 {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+  .caption-container1 {
+    text-align: center;
+    background-color: rgb(63, 203, 207);
+    padding: 2px 16px;
+    color: rgb(28, 7, 121) white;
+  }
+
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .column1 {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo1 {
+    opacity: 0.6;
+  }
+
+  .active1,
+  .demo1:hover {
+    opacity: 1;
+  }
+
+  /*slideshow gallery2*/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+
+  #deaf-and-mute {
+    position: absolute;
+    width: 90%;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    font-size: 15px;
+    margin-top: 2000px;
+    margin-left: 0px;
+  }
+
+  .container-slideshow-gallery2 {
+    position: absolute;
+    margin-top: 2050px;
+    width: 450px;
+    margin-left: 10px;
+    background-image: linear-gradient(rgb(63, 203, 207), rgb(28, 7, 121));
+    border: solid rgb(28, 7, 121);
+  }
+
+  /* Hide the images by default */
+
+  .mySlides2 {
+    margin-left: 100px;
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+
+  .cursor2 {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+
+  .prev2,
+  .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+
+  .next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+
+  .prev2:hover,
+  .next2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+
+  .numbertext2 {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+
+  .caption-container2 {
+    text-align: center;
+    background-color: rgb(63, 203, 207);
+    padding: 2px 16px;
+    color: rgb(28, 7, 121) white;
+  }
+
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+
+  .column2 {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+
+  .demo2 {
+    opacity: 0.6;
+  }
+
+  .active2,
+  .demo2:hover {
+    opacity: 1;
+  }
+
+  #CONTACT {
+    position: absolute;
+    text-shadow: 0px 7px 10px rgb(77, 74, 74);
+    padding-top: 100px;
+    margin-top: 2600px;
+    margin-left: 165px;
+  }
+
+  #info {
+    position: absolute;
+    margin-top: 2750px;
+    margin-left: 0px;
+    width: 400px;
+    height: 200px;
+  }
+
+  .info-image {
+    font-size: 15px;
+    text-align: left;
+    font-family: cursive;
+  }
+
+  #landing {
+    position: absolute;
+    margin-top: 3000px;
+    margin-left: 0px;
+    height: 300px;
+  }
+
+  .landing {
+    text-align: left;
+  }
+  #enter-name {
+    width: 450px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  #enter-email {
+    width: 450px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  #message-me {
+    font-size: 15px;
+    width: 450px;
+    height: 5px;
+    padding-top: 200px;
+  }
+
+  #submit-me {
+    width: 450px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  #google-map {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3500px;
+    border: solid 2px;
+    width: 450px;
+    height: 400px;
+  }
+  #footer-wrapper {
+    position: absolute;
+    margin-top: 3900px;
+    width: 1000px;
+    height: 100px;
+  }
+
+  #copyright {
+    position: absolute;
+    font-size: 7px;
+    margin-top: 60px;
+  }
+  #follow {
+    position: absolute;
+    font-size: 10px;
+    margin-left: 170px;
+    margin-top: 55px;
+  }
+
+  #media-icon {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-left: 230px;
+    margin-top: 37px;
+  }
+
+  .media-icon {
+    width: 100%;
+  }
+
+  
+}
